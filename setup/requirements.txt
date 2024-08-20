@@ -1,0 +1,8 @@
+google-cloud-bigquery
+google-cloud-bigquery-storage
+google-cloud-aiplatform
+kfp
+toml
+google-cloud-documentai
+
+
