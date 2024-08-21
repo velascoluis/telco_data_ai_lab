@@ -1,6 +1,6 @@
 # Telco Data AI Lab
 
-This repository contains a number of labs to lilustrate the use of Google Cloud Data and AI products using a telco networking equipment dataset
+This repository contains a number of labs to lilustrate the use of Google Cloud Data and AI products using a telco networking equipment incident dataset
 
 ## Setup
 
