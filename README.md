@@ -46,11 +46,13 @@ gcloud projects add-iam-policy-binding $PROJECT_ID \
 
 **NOTE:** You can find a shell script under `telco_data_ai_lab/setup/enable_apis.sh`
 
-Next, navigate to Vertex AI > Notebooks > Workbench and create a new notebook of `INSTANCES` type.
+Next, navigate to Vertex AI > Workbench and create a new notebook of `INSTANCES` type.
 
 Leave all the configuration as default.
 Once the notebook is created, click on `OPEN JUPYTERLAB` to open the web interface.
 Click on Git > Clone a Repository and enter the following URL `https://github.com/velascoluis/telco_data_ai_lab.git`.
+
+![setup_00](assets/setup_00.png)
 
 Now, open and execute notebook under `telco_data_ai_lab/setup/env_setup.ipynb`
 
@@ -60,7 +62,11 @@ This concludes the lab setup.
 
 ## Labs
 
-Now you can follow the lab instructions on the following notebooks:
+Now you can follow the lab instructions on the following notebooks.
+
+You can run all of them with de default Python3 kernel
+
+![setup_01](assets/setup_01.png)
 
 - Lab #1: Simple data analysis
   - [Code](src/data_analysis/simple_analysis.ipynb)
