@@ -1,5 +1,9 @@
 # Telco Data AI Lab
 
+This repository contains a number of labs to lilustrate the use of Google Cloud Data and AI products using a telco networking equipment dataset
+
+## Setup
+
 Once logged into a Google Cloud Project, open Cloud Shell and execute the following commands:
 
 ```bash
@@ -50,10 +54,17 @@ Click on Git > Clone a Repository and enter the following URL `https://github.co
 
 Now, open and execute notebook under `telco_data_ai_lab/setup/env_setup.ipynb`
 
-This concludes the lab setup, now you can follow the lab instructions on the following notebooks:
+This concludes the lab setup.
 
-`telco_data_ai_lab/src/data_analysis/simple_analysis.ipynb`
-`telco_data_ai_lab/src/incident_classifier/random_forest_classifier.ipynb`
-`telco_data_ai_lab/src/gen_ai_docs/gen_ai_bq.ipynb`
+**NOTE:** The data is already generated and hosted on a public bucket, but we supply the data generation scrips, they are located on the `src/datagen` folde
 
+## Labs
 
+Now you can follow the lab instructions on the following notebooks:
+
+- Lab #1: Simple data analysis
+  - [Code](src/data_analysis/simple_analysis.ipynb)
+- Lab #2: Traditional ML
+  - [Code](src/incident_classifier/random_forest_classifier.ipynb)
+- Lab #3: Generative AI
+  - [Code](src/gen_ai_docs/gen_ai_bq.ipynb)
