@@ -36,6 +36,18 @@ with st.form("rag_form"):
           ),
           top_k => 5);"""
 
+    query_search = f"""
+        SELECT *
+        FROM VECTOR_SEARCH(
+          TABLE `{GOOGLE_CLOUD_BIGQUERY_DATASET_MULTI_REGION}.{BASE_TABLE_NAME_INCIDENTS}_docs_embedded`, 'ml_generate_embedding_result',
+          (
+          SELECT ml_generate_embedding_result, content AS query
+          FROM ML.GENERATE_EMBEDDING(
+          MODEL `{GOOGLE_CLOUD_BIGQUERY_DATASET_MULTI_REGION}.gecko_embedder`,
+          (SELECT '{user_query}' AS content))
+          ),
+          top_k => 5);"""
+
     query_rag = f"""SELECT ml_generate_text_result.candidates[0].content.parts[0].text
               FROM ML.GENERATE_TEXT(
                 MODEL `{GOOGLE_CLOUD_BIGQUERY_DATASET_MULTI_REGION}.gemini_model`,
@@ -52,8 +64,8 @@ with st.form("rag_form"):
                 MODEL `{GOOGLE_CLOUD_BIGQUERY_DATASET_MULTI_REGION}.gecko_embedder`,
                 (SELECT '{user_query}' AS content))
                 ),
-                top_k => 5)
-                ));"""
+                top_k => 5)), STRUCT(8192 as max_output_tokens));"""
+
     run_rag = st.form_submit_button("Launch RAG on BQ")
     if run_rag:
         df_rag = run_query(query_rag)
