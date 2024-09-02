@@ -74,3 +74,10 @@ You can run all of them with de default Python3 kernel
   - [Code](src/incident_classifier/random_forest_classifier.ipynb)
 - Lab #3: Generative AI
   - [Code](src/gen_ai_docs/gen_ai_bq.ipynb)
+
+## Prep labs (optional)
+
+- [Getting started with VertexAI Gemini API and Python SDK (Lab)](https://www.cloudskillsboost.google/focuses/86503?catalog_rank=%7B%22rank%22%3A4%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=35761283)
+- [Getting started with VertexAI Studio (Lab)](https://www.cloudskillsboost.google/focuses/86502?catalog_rank=%7B%22rank%22%3A1%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=35761339)
+- [Build and Deploy Machine Learning Solutions on Vertex AI (Course)](https://www.cloudskillsboost.google/course_templates/684?catalog_rank=%7B%22rank%22%3A5%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&search_id=35761493)
+- [Feature Engineering (Course)](https://www.cloudskillsboost.google/course_templates/11?catalog_rank=%7B%22rank%22%3A2%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&search_id=35761546)
