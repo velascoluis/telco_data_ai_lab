@@ -14,6 +14,7 @@ gcloud services enable aiplatform.googleapis.com
 gcloud services enable bigquery.googleapis.com
 gcloud services enable iam.googleapis.com
 gcloud services enable documentai.googleapis.com
+gcloud services enable cloudaicompanion.googleapis.com
 
 
 PROJECT_ID=$(gcloud config get-value project)
