@@ -52,7 +52,10 @@ gcloud projects add-iam-policy-binding $PROJECT_ID \
       --role='roles/aiplatform.admin'
 
 
-
 gcloud projects add-iam-policy-binding $PROJECT_ID \
       --member="serviceAccount:$PROJECT_NUM-compute@developer.gserviceaccount.com"\
       --role='roles/resourcemanager.projectIamAdmin'
+
+gcloud projects add-iam-policy-binding $PROJECT_ID \
+      --member="serviceAccount:service-$PROJECT_NUM@gcp-sa-discoveryengine.iam.gserviceaccount.com"\
+      --role='roles/storage.admin'      
