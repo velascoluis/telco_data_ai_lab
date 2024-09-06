@@ -15,10 +15,14 @@ gcloud services enable bigquery.googleapis.com
 gcloud services enable iam.googleapis.com
 gcloud services enable documentai.googleapis.com
 gcloud services enable cloudaicompanion.googleapis.com
+gcloud services enable discoveryengine.googleapis.com
+
+sleep 60
 
 
 PROJECT_ID=$(gcloud config get-value project)
 PROJECT_NUM=$(gcloud projects list --filter="$PROJECT_ID" --format="value(PROJECT_NUMBER)")
+
 
 gcloud projects add-iam-policy-binding $PROJECT_ID \
       --member="serviceAccount:${PROJECT_NUM}-compute@developer.gserviceaccount.com"\
@@ -43,6 +47,7 @@ gcloud projects add-iam-policy-binding $PROJECT_ID \
 gcloud projects add-iam-policy-binding $PROJECT_ID \
       --member="serviceAccount:$PROJECT_NUM-compute@developer.gserviceaccount.com"\
       --role='roles/resourcemanager.projectIamAdmin'
+
 ```
 
 **NOTE:** You can find a shell script under `telco_data_ai_lab/setup/enable_apis.sh`
