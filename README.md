@@ -80,6 +80,8 @@ You can run all of them with de default Python3 kernel
   - [Code](src/incident_classifier/random_forest_classifier.ipynb)
 - Lab #3: Generative AI
   - [Code](src/gen_ai_docs/gen_ai_bq.ipynb)
+- Lab #4: Agents
+  - [Code](src/agents/incident_resolution_rag_agent.ipynb)  
 
 ## Prep labs (optional)
 
